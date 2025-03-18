@@ -12,5 +12,4 @@ conda install -y hvplot
 conda install -y sklearn
 conda install -y natsort
 
-mc cp -r s3/gabgab/diffusion/RAR
 mc cp -r s3/gabgab/diffusion/data
