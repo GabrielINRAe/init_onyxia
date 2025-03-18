@@ -2,8 +2,6 @@ GIT_REPO=stage_pnr_dynafor
 git --depth clone https://forgemia.inra.fr/dynafor/dev-test/gabriel-orabona/${GIT_REPO}.git
 chown -R onyxia:users ${GIT_REPO}/
 
-mc cp -r s3/gabgab/diffusion/RAR home/work/RAR
-mc cp -r s3/gabgab/diffusion/data home/work/data
 
 conda install -y xarray
 conda install -y rioxarray
@@ -13,3 +11,6 @@ conda install -y holoviews
 conda install -y hvplot
 conda install -y sklearn
 conda install -y natsort
+
+mc cp -r s3/gabgab/diffusion/RAR home/work/RAR
+mc cp -r s3/gabgab/diffusion/data home/work/data
