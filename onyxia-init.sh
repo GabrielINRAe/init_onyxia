@@ -13,3 +13,4 @@ conda install -y sklearn
 conda install -y natsort
 
 mc cp -r s3/gabgab/diffusion/data /home/onyxia/work
+mc cp -r s3/gabgab/diffusion/RAR /home/onyxia/work/L3
