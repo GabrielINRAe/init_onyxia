@@ -11,6 +11,7 @@ conda install -y holoviews
 conda install -y hvplot
 conda install -y sklearn
 conda install -y natsort
+conda install -y jupyter_bokeh
 
 mc cp -r s3/gabgab/diffusion/data /home/onyxia/work
 mc cp -r s3/gabgab/diffusion/RAR /home/onyxia/work/L3
