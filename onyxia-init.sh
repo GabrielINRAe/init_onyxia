@@ -13,5 +13,7 @@ conda install -y sklearn
 conda install -y natsort
 conda install -y jupyter_bokeh
 
+mkdir -p L3/{in_dir,out_dir} prod
+
 mc cp -r s3/gabgab/diffusion/data /home/onyxia/work
 mc cp -r s3/gabgab/diffusion/RAR /home/onyxia/work/L3
