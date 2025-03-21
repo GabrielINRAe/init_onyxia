@@ -12,6 +12,8 @@ conda install -y hvplot
 conda install -y sklearn
 conda install -y natsort
 conda install -y jupyter_bokeh
+conda install -y libgdal-netcdf
+conda install -y cftime
 
 mkdir -p L3/{in_dir,out_dir} prod
 
