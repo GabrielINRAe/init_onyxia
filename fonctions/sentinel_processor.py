@@ -51,7 +51,7 @@ class SentinelProcessor:
             elif self.clip_ref.suffix in [".tif", ".tiff"]:
                 print(f"✂️ Clipping avec le raster : {self.clip_ref}")
                 ref_raster = rio.open_rasterio(self.clip_ref)
-                da = da.rio.clip_box(*ref_raster.rio.bounds(), crs=ref_raster.rio.crs)
+                da = da.rio.reproject_match(ref_raster)
         elif self.bbox:
             print(f"✂️ Clipping avec la bounding box manuelle : {self.bbox}")
             da = da.rio.clip_box(*self.bbox, crs=self.crs)  # Gestion automatique du CRS
@@ -76,7 +76,7 @@ class SentinelProcessor:
                 print(f"🔄 Rééchantillonnage de {band} à 10m...")
                 da = da.rio.reproject_match(self.get_reference_raster())
 
-            # TODO Ajouter le masque des nuages
+            # Ajouter le masque des nuages
             updir = os.path.dirname(Path(file))
             m_path = glob.glob(pathname=os.path.join(updir, "**/*FLG*"), recursive=True)[0]
             print(f"Application du masque {os.path.basename(m_path)}")
@@ -89,11 +89,8 @@ class SentinelProcessor:
             da = da.rio.write_crs(self.crs)
 
             # Clipping APRES rééchantillonnage
-            if self.clip_ref:
-                ref_raster = rio.open_rasterio(self.clip_ref)
-                da = xr.align(ref_raster,da, join="left",exclude="time")[1]
-            # if self.clip_ref or self.bbox:
-            #     da = self.clip_data(da)
+            if self.clip_ref or self.bbox:
+                da = self.clip_data(da)
             
             # Stockage des données dans le dictionnaire
             if band not in data_dict:
