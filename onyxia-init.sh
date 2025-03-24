@@ -14,7 +14,7 @@ conda install -y natsort
 conda install -y jupyter_bokeh
 conda install -y libgdal-netcdf
 conda install -y cftime
-conda install -y datashader
+conda install -y scikit-image
 
 mkdir -p L3/{in_dir,out_dir} prod
 
