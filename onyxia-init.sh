@@ -1,9 +1,7 @@
-GIT_REPO=stage_pnr_dynafor
-git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/gabriel-orabona/${GIT_REPO}.git
-chown -R onyxia:users ${GIT_REPO}/
-GIT_REPO2=spectral-indices
-git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/lucas/${GIT_REPO2}.git
-chown -R onyxia:users ${GIT_REPO2}/
+git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/gabriel-orabona/stage_pnr_dynafor.git
+chown -R onyxia:users stage_pnr_dynafor/
+git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/lucas/spectral-indices.git
+chown -R onyxia:users spectral-indices/
 
 
 # conda install -y xarray
