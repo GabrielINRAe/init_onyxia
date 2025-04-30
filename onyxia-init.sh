@@ -1,8 +1,8 @@
 GIT_REPO=stage_pnr_dynafor
-git --depth clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/gabriel-orabona/${GIT_REPO}.git
+git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/gabriel-orabona/${GIT_REPO}.git
 chown -R onyxia:users ${GIT_REPO}/
 GIT_REPO2=spectral-indices
-git --depth clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/lucas/${GIT_REPO2}.git
+git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/lucas/${GIT_REPO2}.git
 chown -R onyxia:users ${GIT_REPO2}/
 
 
