@@ -1,6 +1,6 @@
-git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/gabriel-orabona/stage_pnr_dynafor.git
+git clone https://oauth2:8XZHUtdGgYxqgC8ryT8a@forgemia.inra.fr/dynafor/dev-test/gabriel-orabona/stage_pnr_dynafor.git
 chown -R onyxia:users stage_pnr_dynafor/
-git clone https://oauth2:z9nVf3NenWpJyGxfrnD9@forgemia.inra.fr/dynafor/dev-test/lucas/spectral-indices.git
+git clone https://oauth2:8XZHUtdGgYxqgC8ryT8a@forgemia.inra.fr/dynafor/dev-test/lucas/spectral-indices.git
 chown -R onyxia:users spectral-indices/
 
 
