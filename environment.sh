@@ -4,4 +4,4 @@ chown -R onyxia:users ${GIT_REPO}/
 
 pip install -r ${GIT_REPO}/requirements.txt
 
-mc cp -r s3/gabrielorabona/diffusion/haies_mnt_lidar /haies_mnt_lidar
+mc cp -r s3/gabrielorabona/diffusion/haies_mnt_lidar haies_mnt_lidar/
