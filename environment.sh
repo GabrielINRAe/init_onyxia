@@ -3,5 +3,3 @@ git clone --depth 1 https://gabriel.orabona:AHh14xclHvx7CyI-nZnHy286MQp1Ojcxawk.
 chown -R onyxia:users ${GIT_REPO}/
 
 pip install -r ${GIT_REPO}/requirements.txt
-
-mc cp -r s3/gabrielorabona/diffusion/haies_mnt_lidar .
